@@ -23,7 +23,7 @@ putchar((n / 10) + '0');
 putchar((n % 10) + '0');
 if (n < 89)
 {
-putchar('0');
+  putchar(',');
 putchar(' ');
 }
 }
