@@ -1,44 +1,26 @@
 #include <stdio.h>
 /**
-* main - Program entry point
-* Return: 0 on success. Error code otherwise
+* main - Prints all combinations of two digits
+* Return: 0 on success
 */
 int main(void)
 {
-int i, j, k, l;
-i = 0;
-while (i <= 9)
+int number1, number2;
+for (number1 = 0; number2 <= 98; number1++)
 {
-j = 0;
-while (j <= 9)
+for (number2 = number1 + 1; number2 <= 99; number2++)
 {
-k = 0;
-while (k <= 9)
-{
-l = 0;
-while (l <= 9)
-{
-if (k != 0 && l != 0)
-{
-putchar(i + '0');
-putchar(j + '0');
+putchar((number1 / 10) + '0');
+putchar((number1 % 10) + '0');
 putchar(' ');
-putchar(k + '0');
-putchar(l + '0');
+putchar((number2 / 10) + '0');
+putchar((number2 % 10) + '0');
+if (number1 == 98 && number2 == 99)
+continue;
+putchar (',');
+putchar (' ');
 }
-if (1 == 1)
-{
-putchar(',');
-putchar(' ');
 }
-l++;
-}
-k++;
-}
-j++;
-}
-i++;
-}
-putchar('\n');
+putchar ('\n');
 return (0);
 }
