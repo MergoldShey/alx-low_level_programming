@@ -6,22 +6,20 @@
 */
 int main(void)
 {
-long int i, j, k, next;
-j = 1;
-k = 2;
-for (i = 1; i <= 50; ++i)
+int i = 0;
+long int a = 0, b = 1, next;
+while (i < 50)
 {
-if (j != 20365011074)
+next = a + b;
+a = b;
+b = next;
+printf("%lu", next);
+if  (i < 49)
 {
-printf("%ld, ", j);
+printf(",");
 }
-else
-{
-printf("%ld\n", j);
+i++;
 }
-next = j + k;
-j = k;
-k = next;
-}
+putchar('\n');
 return (0);
 }
