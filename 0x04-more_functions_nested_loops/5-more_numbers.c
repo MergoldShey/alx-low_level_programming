@@ -18,13 +18,13 @@ for (n = 0; n <= 14; n++)
 c = n;
 if (n > 9)
 {
-putchar('1');
+_putchar('1');
 c = n % 10;
 }
-putchar('0' + c);
+_putchar('0' + c);
 }
 
-putchar('\n');
+_putchar('\n');
 i++;
 }
 }
