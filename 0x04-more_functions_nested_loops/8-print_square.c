@@ -17,14 +17,14 @@ for (a = 0; a < size; a++)
 b = 0;
 while (b < size)
 {
-putchar('#');
+_putchar('#');
 b++;
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 else
 {
-putchar('\n');
+_putchar('\n');
 }
 }
