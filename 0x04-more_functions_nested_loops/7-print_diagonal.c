@@ -15,14 +15,14 @@ while (i < n && n > 0)
 c = 0;
 while (c < i)
 {
-putchar(' ');
+_putchar(' ');
 c++;
 }
 
-putchar('\\');
-putchar('\n');
+_putchar('\\');
+_putchar('\n');
 i++;
 }
 if (i == 0)
-putchar('\n');
+_putchar('\n');
 }
