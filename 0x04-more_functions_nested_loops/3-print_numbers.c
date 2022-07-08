@@ -13,8 +13,8 @@ int i;
 i = 48;
 while (i < 58)
 {
-_putchar(i);
+putchar(i);
 i++;
 }
-_putchar('\n');
+putchar('\n');
 }
