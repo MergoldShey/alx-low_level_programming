@@ -12,8 +12,8 @@ int i = 0;
 
 while (i < n && n > 0)
 {
-putchar('_');
+_putchar('_');
 i++;
 }
-putchar('\n');
+_putchar('\n');
 }
