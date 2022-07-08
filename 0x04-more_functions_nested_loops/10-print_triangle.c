@@ -15,19 +15,19 @@ while (i <= size && size > 0)
 ii = 0;
 while (ii < size - i)
 {
-putchar(' ');
+_putchar(' ');
 ii++;
 }
 ii = 0;
 while (ii < i)
 {
-putchar('#');
+_putchar('#');
 ii++;
 }
 
-putchar('\n');
+_putchar('\n');
 i++;
 }
 if (i == 1)
-putchar('\n');
+_putchar('\n');
 }
