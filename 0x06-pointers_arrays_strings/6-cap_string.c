@@ -3,24 +3,33 @@
 
 /**
 * cap_string - capitalizes all words of a string.
-* @s: the string
+* @n: the string
 *
-* Return: the changed string
+* Return: caps on first letter of a seperator
 */
-char *cap_string(char *s)
+char *cap_string(char *n)
 {
-int i, j, len;
-int sep[13] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+int i, x;
+int cap = 32;
+int separators[] = {',', ';', '.', '?', '"',
+'(', ')', '{', '}', ' ', '\n', '\t'};
+  
+for (i = 0; n[i] != '\0'; i++)
+{
+if (n[i] >= 'a' && n[i] <= 'z')
+{
+n[i] = n[i] - cap;
+}
 
-len = strlen(s);
-
-for (i = 0; i <  len && s[i] != '\0'; i++)
+cap = 0;
+for (x = 0; x <= 12; x++)
 {
-for (j = 0; j < 13; j++)
+if (n[i] == separators[x])
 {
-if (s[i] == sep[j] && (s[i + 1] >= 97 && s[i + 1] <= 122))
-s[i + 1] -= 32;
+x = 12;
+cap = 32;
 }
 }
-return (s);
+}
+return (n);
 }
