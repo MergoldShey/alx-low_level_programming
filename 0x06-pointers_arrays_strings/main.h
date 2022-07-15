@@ -26,4 +26,6 @@ char *rot13(char *);
 
 int _putchar(char c);
 
+char *cap_string(char *);
+
 #endif /* MAIN_H */
