@@ -27,6 +27,10 @@ char *rot13(char *);
 int _putchar(char c);
 
 char *cap_string(char *);
+
 int main(void);
+
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+
 
 #endif /* MAIN_H */
