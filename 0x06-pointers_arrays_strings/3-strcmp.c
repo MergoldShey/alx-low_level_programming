@@ -6,8 +6,7 @@
 * _strcmp - This function compares two strings s1 and s2
 * @s1: string one
 * @s2: string two
-*
-* Return: Returns and integer less than, equal to or less than 0
+* Return: Always 0
 */
 
 
