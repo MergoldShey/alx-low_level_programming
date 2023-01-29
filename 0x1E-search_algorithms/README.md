@@ -45,5 +45,5 @@
   - The time complexity (average case) of a jump search in a singly linked list of size n, using step = sqrt(n)
 
  - 108-O
-  - The time complexity (average case) of a jump search in a skip list of size n, with an express lane using step = sqrt(n)
+      - The time complexity (average case) of a jump search in a skip list of size n, with an express lane using step = sqrt(n)
 
