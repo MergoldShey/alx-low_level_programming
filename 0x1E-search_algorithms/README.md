@@ -24,7 +24,7 @@
       - A function that searches for a value in a sorted array of integers using the Jump search algorithm
 
  - 101-O
-       - The time complexity (average case) of a jump search in an array of size n, using step = sqrt(n)
+      - The time complexity (average case) of a jump search in an array of size n, using step = sqrt(n)
 
  - 102-interpolation.c
       - A function that searches for a value in a sorted array of integers using the Interpolation search algorithm
